@@ -64,22 +64,27 @@
     </div>
 
 </div>
-<!--<div class="col-sm-9" product-display products-data='productsData'>-->
-<div class="col-sm-9 noPaddingLR">
-    <div infinite-scroll="loadMore()">
-        <div ng-repeat="item in productsData" class="col-sm-4 prodDiv">
-            <div class="smProdImgDiv" ng-show="false">
-                <img ng-src="{{item[0].tag[0]}}" alt="" class="smProdImg"/>
 
-            </div>
-            <div class="col-sm-12 lgProdImgDiv">
-                <img ng-src="{{item[0].productimages[0]}}" alt="" class="lgProdImg"/>
-                <div class="prodSmDesc">
-                    <strong class="col-sm-12 prodTitle">{{item[0].stylename}}</strong>
-                    <small class="col-sm-12">Collection : {{item[0].collectionname}}</small>
-                    <strong class="col-sm-6">Rs. {{item[0].onlineprice}}</strong>
-                    <small class="col-sm-6">Style # {{item[0].stylenumber}}</small>
+<div infinite-scroll="loadMore()" class="col-sm-9 noPaddingLR">
+    <div>
+        <div ng-repeat="product in productsData">
+            <div ng-repeat="item in product.docs" class="col-sm-4 prodDiv">
+
+                <div class="smProdImgDiv" ng-show="false">
+                    <!--<img ng-src="{{item.tag[0]}}" alt="" class="smProdImg"/>-->
+
                 </div>
+                <div class="col-sm-12 lgProdImgDiv">
+                    <img ng-src="{{item.productimages[0]}}" alt="" class="lgProdImg"/>
+
+                    <div class="prodSmDesc">
+                        <strong class="col-sm-12 prodTitle">{{item.stylename}}</strong>
+                        <small class="col-sm-12">Collection : {{item.collectionname}}</small>
+                        <strong class="col-sm-6">Rs. {{item.onlineprice}}</strong>
+                        <small class="col-sm-6">Style # {{item.stylenumber}}</small>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

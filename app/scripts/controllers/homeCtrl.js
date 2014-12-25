@@ -20,7 +20,7 @@ angular.module('jockeyIndPocApp')
                 url: "assets/productData.json"
             };
 
-            $scope.packs = [1,2,3];
+            $scope.packs = [1, 2, 3];
             $scope.collections = [
                 "24X7 Men",
                 "3D Innovations",
@@ -40,21 +40,23 @@ angular.module('jockeyIndPocApp')
                 apiCallFactory
                     .callApi(config)
                     .then(function (data) {
-                        $log.log("Success Callback",data.response);
-                        $scope.productsData.push(data.response.docs);
+                        $log.log("Success Callback", data.response);
+                        $scope.productsData.push(data.response);
 
                         angular.forEach(data.response.docs, function (val, key) {
-                         angular.forEach(val.availablesizes, function (innerVal, key) {
-                         if($scope.sizes.indexOf(innerVal) < 0){
-                         $scope.sizes.push(innerVal);
-                         }
-                         })
-                         });
+                            angular.forEach(val.availablesizes, function (innerVal, key) {
+                                if ($scope.sizes.indexOf(innerVal) < 0) {
+                                    $scope.sizes.push(innerVal);
+                                }
+                            })
+                        });
 
                     }, function (status) {
                         $log.log("Failure Callback");
                     });
             };
+
+            $scope.loadProductsData();
 
 //            $scope.loadProductsData();
 
@@ -63,14 +65,14 @@ angular.module('jockeyIndPocApp')
             };
 
             $scope.filterByPack = function (pack, checkedVal) {
-                $log.log(pack,checkedVal);
+                $log.log(pack, checkedVal);
             };
 
             $scope.filterByCollection = function (collection, checkedVal) {
-                $log.log(collection,checkedVal);
+                $log.log(collection, checkedVal);
             };
 
-            $scope.loadMore = function() {
+            $scope.loadMore = function () {
                 $log.log("In loadMore");
                 $scope.loadProductsData();
             };
