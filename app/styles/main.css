@@ -226,9 +226,10 @@ ul, ol {
 
 .lgProdImgDiv, .prodDiv {
     position: relative;
-    min-height: 1px;
+    min-height: 400px;
     padding-right: 5px;
     padding-left: 5px;
+    margin-left: 4px;
 }
 
 .prodDiv {

@@ -58,8 +58,6 @@ angular.module('jockeyIndPocApp')
 
             $scope.loadProductsData();
 
-//            $scope.loadProductsData();
-
             $scope.filterBySize = function (size, checkedVal) {
                 $log.log(size, checkedVal);
             };
@@ -71,13 +69,5 @@ angular.module('jockeyIndPocApp')
             $scope.filterByCollection = function (collection, checkedVal) {
                 $log.log(collection, checkedVal);
             };
-
-            $scope.loadMore = function () {
-                $log.log("In loadMore");
-                $scope.loadProductsData();
-            };
-
-            $scope.images = [1, 2, 3, 4, 5, 6, 7, 8];
-
 
         }]);
