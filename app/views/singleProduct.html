@@ -1,0 +1,25 @@
+<!--
+<div>
+    <div class="stampImgContainer" scrolled-to-end="loadMore()">
+        <div class="stampImg" ng-repeat="productData in productsData">
+            <img class="" ng-src="" ng-mouseover="" ng-mouseleave=""/>
+            {{productData.docs[0]}}
+        </div>
+    </div>
+    <div class="mainImgContainer">
+        <img ng-src="">
+    </div>
+</div>
+-->
+
+<!--
+<div>
+    <div infinite-scroll='loadMore()' infinite-scroll-distance='2'>
+        <img ng-repeat='image in images' ng-src='http://placehold.it/225x250&text={{image}}'>
+    </div>
+</div>
+-->
+
+<div infinite-scroll="addMoreItems()">
+    <div ng-repeat="item in productsData">Item number {{item}}</div>
+</div>

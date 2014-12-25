@@ -1,0 +1,86 @@
+<div class="col-sm-3 noPaddingLR">
+    <h5 class="refineSearch">Refine Your Search</h5>
+
+    <div class="filterSectionDiv">
+        <div class="filterSectionHeader">
+            <span>SIZE</span>
+            <span class="pull-right collapseExpandIcon"> <i class="glyphicon glyphicon-plus"></i> </span>
+        </div>
+        <div class="filterSectionBody">
+            <ul class="list-unstyled list-inline">
+                <li ng-repeat="size in sizes" class="col-sm-6">
+                    <label class="pointer">
+                        <input type="checkbox" ng-model="checkVal" ng-click="filterBySize(size, checkVal)"/> {{size}}
+                    </label>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="filterSectionDiv">
+        <div class="filterSectionHeader">
+            <span>PACK / MULTI PACK</span>
+            <span class="pull-right collapseExpandIcon"> <i class="glyphicon glyphicon-plus"></i> </span>
+        </div>
+        <div class="filterSectionBody">
+            <ul class="list-unstyled">
+                <li ng-repeat="pack in packs" class="">
+                    <label class="pointer">
+                        <input type="checkbox" ng-model="checkVal" ng-click="filterByPack(pack, checkVal)"/> pack of
+                        {{pack}}
+                    </label>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="filterSectionDiv">
+        <div class="filterSectionHeader">
+            <span>PRICE</span>
+            <span class="pull-right collapseExpandIcon"> <i class="glyphicon glyphicon-plus"></i> </span>
+        </div>
+        <div class="filterSectionBody">
+
+        </div>
+    </div>
+
+    <div class="filterSectionDiv">
+        <div class="filterSectionHeader">
+            <span>COLLECTION</span>
+            <span class="pull-right collapseExpandIcon"> <i class="glyphicon glyphicon-plus"></i> </span>
+        </div>
+        <div class="filterSectionBody overFlowAuto">
+            <ul class="list-unstyled">
+                <li ng-repeat="collection in collections" class="">
+                    <label class="pointer">
+                        <input type="checkbox" ng-model="checkVal" ng-click="filterByCollection(collection, checkVal)"/>
+                        {{collection}}
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<!--<div class="col-sm-9" product-display products-data='productsData'>-->
+<div class="col-sm-9 noPaddingLR">
+    <div infinite-scroll="loadMore()">
+        <div ng-repeat="item in productsData" class="col-sm-4 prodDiv">
+            <div class="smProdImgDiv" ng-show="false">
+                <img ng-src="{{item[0].tag[0]}}" alt="" class="smProdImg"/>
+
+            </div>
+            <div class="col-sm-12 lgProdImgDiv">
+                <img ng-src="{{item[0].productimages[0]}}" alt="" class="lgProdImg"/>
+                <div class="prodSmDesc">
+                    <strong class="col-sm-12 prodTitle">{{item[0].stylename}}</strong>
+                    <small class="col-sm-12">Collection : {{item[0].collectionname}}</small>
+                    <strong class="col-sm-6">Rs. {{item[0].onlineprice}}</strong>
+                    <small class="col-sm-6">Style # {{item[0].stylenumber}}</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

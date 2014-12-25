@@ -1,0 +1,13 @@
+Particular rows and cols in ng-repeat
+---------------------------------------
+http://stackoverflow.com/questions/14123307/angular-js-conditional-markup-in-ng-repeat
+http://jsfiddle.net/rtCP3/41/
+http://jsfiddle.net/W39Q2/
+
+
+Infinite scrolling
+-----------------------
+http://binarymuse.github.io/ngInfiniteScroll/documentation.html#
+http://binarymuse.github.io/ngInfiniteScroll/demo_basic.html
+http://binarymuse.github.io/ngInfiniteScroll/demo_async.html
+http://jsfiddle.net/vojtajina/U7Bz9/
