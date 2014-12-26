@@ -171,6 +171,7 @@ label {
     padding: 9px 10px;
     margin-bottom: 10px;
     clear: both;
+    overflow: auto;
 }
 
 .overFlowAuto {

@@ -41,7 +41,7 @@ angular.module('jockeyIndPocApp')
                     .callApi(config)
                     .then(function (data) {
                         $log.log("Success Callback", data.response);
-                        $scope.productsData.push(data.response);
+                        $scope.productsData.push(data.response.docs);
 
                         angular.forEach(data.response.docs, function (val, key) {
                             angular.forEach(val.availablesizes, function (innerVal, key) {
@@ -56,10 +56,27 @@ angular.module('jockeyIndPocApp')
                     });
             };
 
-            $scope.loadProductsData();
+//            $scope.loadProductsData();
+
+            $scope.filterBySizeArray = [];
+
 
             $scope.filterBySize = function (size, checkedVal) {
-                $log.log(size, checkedVal);
+                $scope.productsFilterData = [];
+                if (checkedVal === true && $scope.filterBySizeArray.indexOf(size) < 0) {
+                    $scope.filterBySizeArray.push(size);
+                }
+                if (checkedVal === false && $scope.filterBySizeArray.indexOf(size) >= 0) {
+                    var index = $scope.filterBySizeArray.indexOf(size);
+                    $scope.filterBySizeArray.splice(index, 1);
+                }
+
+                angular.forEach($scope.productsData, function (val, key) {
+                    angular.forEach(val, function (innerVal, innerKey) {
+                        $log.log("innerVal : ",innerVal);
+                    });
+                });
+
             };
 
             $scope.filterByPack = function (pack, checkedVal) {
