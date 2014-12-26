@@ -20,7 +20,7 @@ angular.module('jockeyIndPocApp')
                 url: "assets/productData.json"
             };
 
-            $scope.packs = [1,2,3];
+            $scope.packs = [1, 2, 3];
             $scope.collections = [
                 "24X7 Men",
                 "3D Innovations",
@@ -40,16 +40,16 @@ angular.module('jockeyIndPocApp')
                 apiCallFactory
                     .callApi(config)
                     .then(function (data) {
-                        $log.log("Success Callback",data.response);
+                        $log.log("Success Callback", data.response);
                         $scope.productsData.push(data.response.docs);
 
                         angular.forEach(data.response.docs, function (val, key) {
-                         angular.forEach(val.availablesizes, function (innerVal, key) {
-                         if($scope.sizes.indexOf(innerVal) < 0){
-                         $scope.sizes.push(innerVal);
-                         }
-                         })
-                         });
+                            angular.forEach(val.availablesizes, function (innerVal, key) {
+                                if ($scope.sizes.indexOf(innerVal) < 0) {
+                                    $scope.sizes.push(innerVal);
+                                }
+                            })
+                        });
 
                     }, function (status) {
                         $log.log("Failure Callback");
@@ -58,24 +58,33 @@ angular.module('jockeyIndPocApp')
 
 //            $scope.loadProductsData();
 
+            $scope.filterBySizeArray = [];
+
+
             $scope.filterBySize = function (size, checkedVal) {
-                $log.log(size, checkedVal);
+                $scope.productsFilterData = [];
+                if (checkedVal === true && $scope.filterBySizeArray.indexOf(size) < 0) {
+                    $scope.filterBySizeArray.push(size);
+                }
+                if (checkedVal === false && $scope.filterBySizeArray.indexOf(size) >= 0) {
+                    var index = $scope.filterBySizeArray.indexOf(size);
+                    $scope.filterBySizeArray.splice(index, 1);
+                }
+
+                angular.forEach($scope.productsData, function (val, key) {
+                    angular.forEach(val, function (innerVal, innerKey) {
+                        $log.log("innerVal : ",innerVal);
+                    });
+                });
+
             };
 
             $scope.filterByPack = function (pack, checkedVal) {
-                $log.log(pack,checkedVal);
+                $log.log(pack, checkedVal);
             };
 
             $scope.filterByCollection = function (collection, checkedVal) {
-                $log.log(collection,checkedVal);
+                $log.log(collection, checkedVal);
             };
-
-            $scope.loadMore = function() {
-                $log.log("In loadMore");
-                $scope.loadProductsData();
-            };
-
-            $scope.images = [1, 2, 3, 4, 5, 6, 7, 8];
-
 
         }]);

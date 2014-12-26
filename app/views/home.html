@@ -1,4 +1,4 @@
-<div class="col-sm-3 noPaddingLR">
+<div class="col-xs-3 noPaddingLR">
     <h5 class="refineSearch">Refine Your Search</h5>
 
     <div class="filterSectionDiv">
@@ -8,11 +8,10 @@
         </div>
         <div class="filterSectionBody">
             <ul class="list-unstyled list-inline">
-                <li ng-repeat="size in sizes" class="col-sm-6">
+                <li ng-repeat="size in sizes" class="col-xs-6">
                     <label class="pointer">
                         <input type="checkbox" ng-model="checkVal" ng-click="filterBySize(size, checkVal)"/> {{size}}
                     </label>
-
                 </li>
             </ul>
         </div>
@@ -30,7 +29,6 @@
                         <input type="checkbox" ng-model="checkVal" ng-click="filterByPack(pack, checkVal)"/> pack of
                         {{pack}}
                     </label>
-
                 </li>
             </ul>
         </div>
@@ -64,22 +62,27 @@
     </div>
 
 </div>
-<!--<div class="col-sm-9" product-display products-data='productsData'>-->
-<div class="col-sm-9 noPaddingLR">
-    <div infinite-scroll="loadMore()">
-        <div ng-repeat="item in productsData" class="col-sm-4 prodDiv">
-            <div class="smProdImgDiv" ng-show="false">
-                <img ng-src="{{item[0].tag[0]}}" alt="" class="smProdImg"/>
 
-            </div>
-            <div class="col-sm-12 lgProdImgDiv">
-                <img ng-src="{{item[0].productimages[0]}}" alt="" class="lgProdImg"/>
-                <div class="prodSmDesc">
-                    <strong class="col-sm-12 prodTitle">{{item[0].stylename}}</strong>
-                    <small class="col-sm-12">Collection : {{item[0].collectionname}}</small>
-                    <strong class="col-sm-6">Rs. {{item[0].onlineprice}}</strong>
-                    <small class="col-sm-6">Style # {{item[0].stylenumber}}</small>
+<div infinite-scroll="loadProductsData()" class="col-xs-9 noPaddingLR">
+    <div>
+        <div ng-repeat="product in productsData">
+            <div ng-repeat="item in product" class="col-xs-4 prodDiv clearfix">
+
+                <div class="smProdImgDiv" ng-show="false">
+                    <!--<img ng-src="{{item.tag[0]}}" alt="" class="smProdImg"/>-->
+
                 </div>
+                <div class="col-xs-12 lgProdImgDiv">
+                    <img ng-src="{{item.productimages[0]}}" alt="" class="lgProdImg"/>
+
+                    <div class="prodSmDesc">
+                        <strong class="col-xs-12 prodTitle">{{item.producttitle}}</strong>
+                        <small class="col-xs-12">Collection : {{item.collectionname}}</small>
+                        <strong class="col-xs-6">Rs. {{item.onlineprice}}</strong>
+                        <small class="col-xs-6">Style # {{item.stylenumber}}</small>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
