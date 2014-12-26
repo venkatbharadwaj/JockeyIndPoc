@@ -13,7 +13,7 @@
         "start": 0,
         "docs": [
             {
-                "id": "18148|2",
+                "id": 1001,
                 "companyid": 1,
                 "siteid": 1,
                 "producttypeid": 2,
@@ -125,9 +125,7 @@
                     "2506"],
                 "availablesizes": ["33",
                     "34",
-                    "35",
-                    "36",
-                    "37"],
+                    "35"],
                 "datecreated": "2014-04-14T21:11:44.827Z",
                 "lastupdated": "2014-08-29T15:33:04.457Z",
                 "numberofpieces": 1,
@@ -149,7 +147,7 @@
                 "_version_": 1486911774896685056
             },
             {
-                "id": "18149|2",
+                "id": 1002,
                 "companyid": 1,
                 "siteid": 1,
                 "producttypeid": 2,
@@ -262,8 +260,7 @@
                 "availablesizes": ["33",
                     "34",
                     "35",
-                    "36",
-                    "37"],
+                    "36"],
                 "datecreated": "2014-04-14T21:11:44.827Z",
                 "lastupdated": "2014-08-29T15:33:04.457Z",
                 "numberofpieces": 1,
@@ -285,7 +282,7 @@
                 "_version_": 1486911774913462272
             },
             {
-                "id": "18150|2",
+                "id": 1003,
                 "companyid": 1,
                 "siteid": 1,
                 "producttypeid": 2,
@@ -395,9 +392,7 @@
                 "associatedstorecategoryids": ["2273",
                     "2164",
                     "2506"],
-                "availablesizes": ["33",
-                    "34",
-                    "35",
+                "availablesizes": [
                     "36",
                     "37"],
                 "datecreated": "2014-04-14T21:11:44.827Z",
@@ -421,7 +416,7 @@
                 "_version_": 1486911774945968128
             },
             {
-                "id": "18151|2",
+                "id": 1004,
                 "companyid": 1,
                 "siteid": 1,
                 "producttypeid": 2,
@@ -531,8 +526,7 @@
                 "associatedstorecategoryids": ["2273",
                     "2164",
                     "2506"],
-                "availablesizes": ["33",
-                    "34",
+                "availablesizes": [
                     "35",
                     "36",
                     "37"],
@@ -557,7 +551,7 @@
                 "_version_": 1486911774962745344
             },
             {
-                "id": "18152|2",
+                "id": 1005,
                 "companyid": 1,
                 "siteid": 1,
                 "producttypeid": 2,
@@ -669,9 +663,8 @@
                     "2506"],
                 "availablesizes": ["33",
                     "34",
-                    "35",
-                    "36",
-                    "37"],
+                    "37",
+                    "38"],
                 "datecreated": "2014-04-14T21:11:44.827Z",
                 "lastupdated": "2014-08-29T15:33:04.457Z",
                 "numberofpieces": 1,
@@ -693,7 +686,7 @@
                 "_version_": 1486911774978473984
             },
             {
-                "id": "18153|2",
+                "id": 1006,
                 "companyid": 1,
                 "siteid": 1,
                 "producttypeid": 2,
@@ -807,7 +800,7 @@
                     "34",
                     "35",
                     "36",
-                    "37"],
+                    "39"],
                 "datecreated": "2014-04-14T21:11:45.5Z",
                 "lastupdated": "2014-09-04T15:25:27.583Z",
                 "numberofpieces": 1,
@@ -829,7 +822,7 @@
                 "_version_": 1486911774995251200
             },
             {
-                "id": "18154|2",
+                "id": 1007,
                 "companyid": 1,
                 "siteid": 1,
                 "producttypeid": 2,
@@ -940,10 +933,8 @@
                     "2164",
                     "2506"],
                 "availablesizes": ["33",
-                    "34",
                     "35",
-                    "36",
-                    "37"],
+                    "40"],
                 "datecreated": "2014-04-14T21:11:45.5Z",
                 "lastupdated": "2014-09-04T15:25:27.583Z",
                 "numberofpieces": 1,
@@ -965,7 +956,7 @@
                 "_version_": 1486911775012028416
             },
             {
-                "id": "18155|2",
+                "id": 1008,
                 "companyid": 1,
                 "siteid": 1,
                 "producttypeid": 2,
@@ -1076,9 +1067,6 @@
                     "2164",
                     "2506"],
                 "availablesizes": ["33",
-                    "34",
-                    "35",
-                    "36",
                     "37"],
                 "datecreated": "2014-04-14T21:11:45.5Z",
                 "lastupdated": "2014-09-04T15:25:27.583Z",
@@ -1101,7 +1089,7 @@
                 "_version_": 1486911775027757056
             },
             {
-                "id": "18156|2",
+                "id": 1009,
                 "companyid": 1,
                 "siteid": 1,
                 "producttypeid": 2,
@@ -1212,10 +1200,8 @@
                     "2164",
                     "2506"],
                 "availablesizes": ["33",
-                    "34",
-                    "35",
                     "36",
-                    "37"],
+                    "40"],
                 "datecreated": "2014-04-14T21:11:45.5Z",
                 "lastupdated": "2014-09-04T15:25:27.583Z",
                 "numberofpieces": 1,
@@ -1237,7 +1223,7 @@
                 "_version_": 1486911775044534272
             },
             {
-                "id": "18157|2",
+                "id": 1010,
                 "companyid": 1,
                 "siteid": 1,
                 "producttypeid": 2,
