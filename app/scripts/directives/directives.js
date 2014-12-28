@@ -43,4 +43,46 @@ angular.module('jockeyIndPocApp')
                 }
             });
         };
-    });
+    })
+  .directive('product',function(){
+    return {
+      restrict:"E",
+      scope:{
+        item:"&"
+      },
+      link: function(scope,ele,attrs){
+        //console.log("from directive ");
+      },
+      controller:function($scope,$interval){
+        //console.log("from controller ");
+        $scope.product = $scope.item();
+        $scope.src = $scope.product.tag[0];
+        var timer=undefined;
+
+        $scope.largeImgHover = function(tags){
+          console.log("hover from directive");
+          if ( angular.isDefined(timer) ) return;
+          var count = 0;
+          timer = $interval(function(){
+            if(count >= tags.length-1){
+              count=0;
+            }else{
+              count++;
+            }
+            $scope.src = tags[count];
+
+          },500);
+        };
+        $scope.largeImgMleave = function(url){
+          console.log("mleave from directive");
+          if(angular.isDefined(timer)){
+            $interval.cancel(timer);
+            console.log("timer stopped");
+            timer=undefined;
+            $scope.src= url;
+          }
+        };
+      },
+      templateUrl:'views/product.html'
+    }
+  });

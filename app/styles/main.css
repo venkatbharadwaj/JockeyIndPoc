@@ -212,7 +212,7 @@ ul, ol {
 }
 
 .smProdImg {
-
+  width: 20%;
 }
 
 .smProdImgDiv, .lgProdImgDiv {
@@ -245,4 +245,10 @@ ul, ol {
 
 .prodTitle {
     margin-bottom: 10px;
+}
+.smProdImgDiv {
+  display: none;
+}
+.prodDiv:hover .smProdImgDiv {
+  display: block;
 }

@@ -65,22 +65,11 @@
 
 </div>
 <!--<div class="col-sm-9" product-display products-data='productsData'>-->
-<div class="col-sm-9 noPaddingLR">
-    <div infinite-scroll="loadMore()">
+<div class="col-sm-9 noPaddingLR" ng-model="productsData">
+    <!--<div infinite-scroll="loadMore()">-->
         <div ng-repeat="item in productsData" class="col-sm-4 prodDiv">
-            <div class="smProdImgDiv" ng-show="false">
-                <img ng-src="{{item[0].tag[0]}}" alt="" class="smProdImg"/>
-
-            </div>
-            <div class="col-sm-12 lgProdImgDiv">
-                <img ng-src="{{item[0].productimages[0]}}" alt="" class="lgProdImg"/>
-                <div class="prodSmDesc">
-                    <strong class="col-sm-12 prodTitle">{{item[0].stylename}}</strong>
-                    <small class="col-sm-12">Collection : {{item[0].collectionname}}</small>
-                    <strong class="col-sm-6">Rs. {{item[0].onlineprice}}</strong>
-                    <small class="col-sm-6">Style # {{item[0].stylenumber}}</small>
-                </div>
-            </div>
+          <product item="item"></product>
         </div>
-    </div>
+  <button ng-click="addData();">Add Data!</button>
+    <!--</div>-->
 </div>
