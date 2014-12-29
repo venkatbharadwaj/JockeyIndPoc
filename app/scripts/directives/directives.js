@@ -50,6 +50,7 @@ angular.module('jockeyIndPocApp')
       scope:{
         item:"&"
       },
+      //replace: true,
       link: function(scope,ele,attrs){
         //console.log("from directive ");
       },
@@ -85,4 +86,25 @@ angular.module('jockeyIndPocApp')
       },
       templateUrl:'views/product.html'
     }
+  })
+  .directive('whenScrolled', function($window) {
+    return function(scope, elm, attr) {
+      var raw = angular.element("body");
+      console.log("in whenscrl directive",$(window));
+      angular.element($window).bind("scroll",function(){
+
+        if (raw.scrollTop + raw.offsetHeight >= raw.scrollHeight) {
+          //scope.$apply(attr.whenScrolled);
+          console.log("done??");
+        }
+
+      })
+      /*elm.bind('scroll', function() {
+        console.log("scroll event binded");
+        if (raw.scrollTop + raw.offsetHeight >= raw.scrollHeight) {
+          //scope.$apply(attr.whenScrolled);
+          //console.log("atlast time to call the api");
+        }
+      });*/
+    };
   });
