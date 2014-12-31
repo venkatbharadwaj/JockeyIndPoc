@@ -1,49 +1,4 @@
 angular.module('jockeyIndPocApp')
-
-    .directive('productDisplay', function () {
-        return {
-            restrict: 'A',
-            transclude: true,
-            scope: {
-                productsData: '='
-            },
-            link: function (scope, element, attrs) {
-
-            },
-            controller: function ($scope) {
-                var panes = $scope.panes = [];
-
-                $scope.select = function (pane) {
-                    angular.forEach(panes, function (pane) {
-                        pane.selected = false;
-                    });
-                    pane.selected = true;
-                };
-
-                this.addPane = function (pane) {
-                    if (panes.length === 0) {
-                        $scope.select(pane);
-                    }
-                    panes.push(pane);
-                };
-            },
-            templateUrl: 'views/singleProduct.html'
-        };
-    })
-
-    .directive('scrolledToEnd', function () {
-
-        return function (scope, elm, attr) {
-            console.log("In scrolledToEnd",scope, elm, attr);
-            var raw = elm[0];
-
-            elm.bind('scroll', function () {
-                if (raw.scrollTop + raw.offsetHeight >= raw.scrollHeight) {
-                    scope.$apply(attr.whenScrolled);
-                }
-            });
-        };
-    })
   .directive('product',function(){
     return {
       restrict:"E",
@@ -58,10 +13,29 @@ angular.module('jockeyIndPocApp')
         //console.log("from controller ");
         $scope.product = $scope.item();
         $scope.src = $scope.product.tag[0];
+        $scope.item = {};
+        $scope.item.stylename = $scope.product.stylename;
+        $scope.item.collectionname = $scope.product.collectionname;
+        $scope.item.onlineprice = $scope.product.onlineprice;
+        $scope.item.stylename = $scope.product.stylename;
+        /*var itemObj = {
+          stylename : $scope.product.stylename,
+          collectionname:$scope.product.collectionname,
+          onlineprice:$scope.product.onlineprice,
+          stylenumber:$scope.product.stylenumber
+
+        };*/
+
         var timer=undefined;
 
-        $scope.largeImgHover = function(tags){
+        $scope.largeImgHover = function(tags,stampObj){
           console.log("hover from directive");
+          if(stampObj){
+            $scope.item.stylename=stampObj.stylename;
+            $scope.item.collectionname = stampObj.collectionname;
+            $scope.item.onlineprice = stampObj.onlineprice;
+            $scope.item.stylename = stampObj.stylename;
+          }
           if ( angular.isDefined(timer) ) return;
           var count = 0;
           timer = $interval(function(){
@@ -74,8 +48,11 @@ angular.module('jockeyIndPocApp')
 
           },500);
         };
-        $scope.largeImgMleave = function(url){
-          console.log("mleave from directive");
+        $scope.largeImgMleave = function(url,prod){
+          $scope.item.stylename=prod.stylename;
+          $scope.item.collectionname = prod.collectionname;
+          $scope.item.onlineprice = prod.onlineprice;
+          $scope.item.stylename = prod.stylename;
           if(angular.isDefined(timer)){
             $interval.cancel(timer);
             console.log("timer stopped");
@@ -86,25 +63,4 @@ angular.module('jockeyIndPocApp')
       },
       templateUrl:'views/product.html'
     }
-  })
-  .directive('whenScrolled', function($window) {
-    return function(scope, elm, attr) {
-      var raw = angular.element("body");
-      console.log("in whenscrl directive",$(window));
-      angular.element($window).bind("scroll",function(){
-
-        if (raw.scrollTop + raw.offsetHeight >= raw.scrollHeight) {
-          //scope.$apply(attr.whenScrolled);
-          console.log("done??");
-        }
-
-      })
-      /*elm.bind('scroll', function() {
-        console.log("scroll event binded");
-        if (raw.scrollTop + raw.offsetHeight >= raw.scrollHeight) {
-          //scope.$apply(attr.whenScrolled);
-          //console.log("atlast time to call the api");
-        }
-      });*/
-    };
   });

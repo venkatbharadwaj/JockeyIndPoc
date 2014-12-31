@@ -119,8 +119,18 @@
                 "boost": 1,
                 "datepublished": "2014-04-30T12:21:25.38Z",
                 "productimages": [
-                  {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"]},
-                  {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"]}
+                  {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"],
+                  "stylename":"Boxer Brief 1",
+                  "collectionname":"Elance 1",
+                  "onlineprice":"300",
+                  "stylenumber":"#"
+                  },
+                  {"images":["../images/boxerbrief_1001_0107white_large.jpg","../images/boxerbrief_1001_0107pebble_large.jpg"],
+                    "stylename":"Boxer Brief 2",
+                    "collectionname":"Elance 2",
+                    "onlineprice":"300",
+                    "stylenumber":"#"
+                  }
                 ],
                 "tag": ["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107white_large.jpg"],
                 "associatedstorecategoryids": ["2273",
@@ -258,8 +268,18 @@
                 "boost": 1,
                 "datepublished": "2014-04-30T12:21:25.38Z",
               "productimages": [
-                {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"]},
-                {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"]}
+                {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"],
+                  "stylename":"Boxer Brief 1",
+                  "collectionname":"Elance 1",
+                  "onlineprice":"300",
+                  "stylenumber":"#"
+                },
+                {"images":["../images/boxerbrief_1001_0107white_large.jpg","../images/boxerbrief_1001_0107pebble_large.jpg"],
+                  "stylename":"Boxer Brief 2",
+                  "collectionname":"Elance 2",
+                  "onlineprice":"300",
+                  "stylenumber":"#"
+                }
               ],
               "tag": ["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107white_large.jpg"],
                 "associatedstorecategoryids": ["2273",
@@ -397,8 +417,18 @@
                 "boost": 1,
                 "datepublished": "2014-04-30T12:21:25.38Z",
               "productimages": [
-                {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"]},
-                {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"]}
+                {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"],
+                  "stylename":"Boxer Brief 1",
+                  "collectionname":"Elance 1",
+                  "onlineprice":"300",
+                  "stylenumber":"#"
+                },
+                {"images":["../images/boxerbrief_1001_0107white_large.jpg","../images/boxerbrief_1001_0107pebble_large.jpg"],
+                  "stylename":"Boxer Brief 2",
+                  "collectionname":"Elance 2",
+                  "onlineprice":"300",
+                  "stylenumber":"#"
+                }
               ],
               "tag": ["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107white_large.jpg"],
                 "associatedstorecategoryids": ["2273",
@@ -536,8 +566,18 @@
                 "boost": 1,
                 "datepublished": "2014-04-30T12:21:25.38Z",
               "productimages": [
-                {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"]},
-                {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"]}
+                {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"],
+                  "stylename":"Boxer Brief 1",
+                  "collectionname":"Elance 1",
+                  "onlineprice":"300",
+                  "stylenumber":"#"
+                },
+                {"images":["../images/boxerbrief_1001_0107white_large.jpg","../images/boxerbrief_1001_0107pebble_large.jpg"],
+                  "stylename":"Boxer Brief 2",
+                  "collectionname":"Elance 2",
+                  "onlineprice":"300",
+                  "stylenumber":"#"
+                }
               ],
                 "tag": ["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"],
                 "associatedstorecategoryids": ["2273",
@@ -675,8 +715,18 @@
                 "boost": 1,
                 "datepublished": "2014-04-30T12:21:48.843Z",
               "productimages": [
-                {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"]},
-                {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"]}
+                {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"],
+                  "stylename":"Boxer Brief 1",
+                  "collectionname":"Elance 1",
+                  "onlineprice":"300",
+                  "stylenumber":"#"
+                },
+                {"images":["../images/boxerbrief_1001_0107white_large.jpg","../images/boxerbrief_1001_0107pebble_large.jpg"],
+                  "stylename":"Boxer Brief 2",
+                  "collectionname":"Elance 2",
+                  "onlineprice":"300",
+                  "stylenumber":"#"
+                }
               ],
                 "tag": ["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"],
                 "associatedstorecategoryids": ["2273",
@@ -814,8 +864,18 @@
                 "boost": 1,
                 "datepublished": "2014-04-30T12:21:48.843Z",
               "productimages": [
-                {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"]},
-                {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"]}
+                {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"],
+                  "stylename":"Boxer Brief 1",
+                  "collectionname":"Elance 1",
+                  "onlineprice":"300",
+                  "stylenumber":"#"
+                },
+                {"images":["../images/boxerbrief_1001_0107white_large.jpg","../images/boxerbrief_1001_0107pebble_large.jpg"],
+                  "stylename":"Boxer Brief 2",
+                  "collectionname":"Elance 2",
+                  "onlineprice":"300",
+                  "stylenumber":"#"
+                }
               ],
               "tag": ["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107white_large.jpg"],
                 "associatedstorecategoryids": ["2273",
@@ -953,8 +1013,18 @@
                 "boost": 1,
                 "datepublished": "2014-04-30T12:21:48.843Z",
               "productimages": [
-                {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"]},
-                {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"]}
+                {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"],
+                  "stylename":"Boxer Brief 1",
+                  "collectionname":"Elance 1",
+                  "onlineprice":"300",
+                  "stylenumber":"#"
+                },
+                {"images":["../images/boxerbrief_1001_0107white_large.jpg","../images/boxerbrief_1001_0107pebble_large.jpg"],
+                  "stylename":"Boxer Brief 2",
+                  "collectionname":"Elance 2",
+                  "onlineprice":"300",
+                  "stylenumber":"#"
+                }
               ],
               "tag": ["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107white_large.jpg"],
                 "associatedstorecategoryids": ["2273",
@@ -1092,8 +1162,18 @@
                 "boost": 1,
                 "datepublished": "2014-04-30T12:21:48.843Z",
               "productimages": [
-                {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"]},
-                {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"]}
+                {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"],
+                  "stylename":"Boxer Brief 1",
+                  "collectionname":"Elance 1",
+                  "onlineprice":"300",
+                  "stylenumber":"#"
+                },
+                {"images":["../images/boxerbrief_1001_0107white_large.jpg","../images/boxerbrief_1001_0107pebble_large.jpg"],
+                  "stylename":"Boxer Brief 2",
+                  "collectionname":"Elance 2",
+                  "onlineprice":"300",
+                  "stylenumber":"#"
+                }
               ],
               "tag": ["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107white_large.jpg"],
                 "associatedstorecategoryids": ["2273",
@@ -1231,8 +1311,18 @@
                 "boost": 1,
                 "datepublished": "2014-04-30T12:21:48.843Z",
               "productimages": [
-                {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"]},
-                {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107pebble_mel_large.jpg"]}
+                {"images":["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107grey_mel_large.jpg"],
+                  "stylename":"Boxer Brief 1",
+                  "collectionname":"Elance 1",
+                  "onlineprice":"300",
+                  "stylenumber":"#"
+                },
+                {"images":["../images/boxerbrief_1001_0107white_large.jpg","../images/boxerbrief_1001_0107pebble_large.jpg"],
+                  "stylename":"Boxer Brief 2",
+                  "collectionname":"Elance 2",
+                  "onlineprice":"300",
+                  "stylenumber":"#"
+                }
               ],
                 "tag": ["../images/boxerbrief_1001_0107charcoal_mel_large.jpg","../images/boxerbrief_1001_0107white_large.jpg"],
                 "associatedstorecategoryids": ["2273",

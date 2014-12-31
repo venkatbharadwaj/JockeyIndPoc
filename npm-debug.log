@@ -1,0 +1,281 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', '-g', 'tree' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 verbose cache add [ 'tree', null ]
+5 verbose cache add name=undefined spec="tree" args=["tree",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'tree',
+6 verbose parsed url   path: 'tree',
+6 verbose parsed url   href: 'tree' }
+7 silly lockFile 80655da8-tree tree
+8 verbose lock tree /home/bharadwaj/.npm/80655da8-tree.lock
+9 silly lockFile 80655da8-tree tree
+10 silly lockFile 80655da8-tree tree
+11 verbose addNamed [ 'tree', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 32a1a350-tree tree@
+14 verbose lock tree@ /home/bharadwaj/.npm/32a1a350-tree.lock
+15 silly addNameRange { name: 'tree', range: '*', hasData: false }
+16 verbose url raw tree
+17 verbose url resolving [ 'https://registry.npmjs.org/', './tree' ]
+18 verbose url resolved https://registry.npmjs.org/tree
+19 info trying registry request attempt 1 at 16:24:38
+20 verbose etag "AC8IDOY7KVF7HRNM59PIQE7UL"
+21 http GET https://registry.npmjs.org/tree
+22 http 304 https://registry.npmjs.org/tree
+23 silly registry.get cb [ 304,
+23 silly registry.get   { date: 'Mon, 29 Dec 2014 10:54:39 GMT',
+23 silly registry.get     server: 'Apache',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     'last-modified': 'Mon, 29 Dec 2014 10:54:39 GMT',
+23 silly registry.get     'cache-control': 'max-age=60',
+23 silly registry.get     etag: '"AC8IDOY7KVF7HRNM59PIQE7UL"',
+23 silly registry.get     age: '19',
+23 silly registry.get     'x-served-by': 'cache-sn86-SIN',
+23 silly registry.get     'x-cache': 'HIT',
+23 silly registry.get     'x-cache-hits': '1',
+23 silly registry.get     'x-timer': 'S1419850479.847016,VS0,VE0',
+23 silly registry.get     vary: 'Accept',
+23 silly registry.get     'content-length': '0',
+23 silly registry.get     'keep-alive': 'timeout=10, max=50',
+23 silly registry.get     connection: 'Keep-Alive' } ]
+24 verbose etag tree from cache
+25 silly addNameRange number 2 { name: 'tree', range: '*', hasData: true }
+26 silly addNameRange versions [ 'tree', [ '0.1.0', '0.1.1', '0.1.2' ] ]
+27 verbose addNamed [ 'tree', '0.1.2' ]
+28 verbose addNamed [ '0.1.2', '0.1.2' ]
+29 silly lockFile 65a2bfc4-tree-0-1-2 tree@0.1.2
+30 verbose lock tree@0.1.2 /home/bharadwaj/.npm/65a2bfc4-tree-0-1-2.lock
+31 silly lockFile 65a2bfc4-tree-0-1-2 tree@0.1.2
+32 silly lockFile 65a2bfc4-tree-0-1-2 tree@0.1.2
+33 silly lockFile 32a1a350-tree tree@
+34 silly lockFile 32a1a350-tree tree@
+35 silly resolved [ { name: 'tree',
+35 silly resolved     version: '0.1.2',
+35 silly resolved     description: 'A JavaScript library for creating and manipulating hierarchical tree structures.',
+35 silly resolved     homepage: 'http://github.com/scttnlsn/tree.js/',
+35 silly resolved     keywords: [ 'util', 'client', 'browser', 'server' ],
+35 silly resolved     author: { name: 'Scott Nelson', email: 'scottbnel@gmail.com' },
+35 silly resolved     contributors: [],
+35 silly resolved     dependencies: { underscore: '' },
+35 silly resolved     main: 'index',
+35 silly resolved     readme: 'Tree.js\n=======\n\nTree.js is a JavaScript library for creating and manipulating hierarchical tree structures.',
+35 silly resolved     readmeFilename: 'README.md',
+35 silly resolved     _id: 'tree@0.1.2',
+35 silly resolved     _from: 'tree@' } ]
+36 info install tree@0.1.2 into /usr/local/lib
+37 info installOne tree@0.1.2
+38 info /usr/local/lib/node_modules/tree unbuild
+39 verbose tar unpack /home/bharadwaj/.npm/tree/0.1.2/package.tgz
+40 silly lockFile 57d2b2c2--usr-local-lib-node-modules-tree tar:///usr/local/lib/node_modules/tree
+41 verbose lock tar:///usr/local/lib/node_modules/tree /home/bharadwaj/.npm/57d2b2c2--usr-local-lib-node-modules-tree.lock
+42 silly lockFile 64667320-adwaj-npm-tree-0-1-2-package-tgz tar:///home/bharadwaj/.npm/tree/0.1.2/package.tgz
+43 verbose lock tar:///home/bharadwaj/.npm/tree/0.1.2/package.tgz /home/bharadwaj/.npm/64667320-adwaj-npm-tree-0-1-2-package-tgz.lock
+44 silly gunzTarPerm modes [ '755', '644' ]
+45 silly gunzTarPerm extractEntry package.json
+46 silly gunzTarPerm extractEntry .npmignore
+47 silly gunzTarPerm extractEntry README.md
+48 silly gunzTarPerm extractEntry index.js
+49 silly gunzTarPerm extractEntry tree.js
+50 silly gunzTarPerm extractEntry test/branch.js
+51 silly gunzTarPerm extractEntry test/node.js
+52 silly gunzTarPerm extractEntry test/tree.js
+53 silly gunzTarPerm extractEntry test/index.html
+54 silly gunzTarPerm extractEntry test/vendor/jquery.js
+55 silly gunzTarPerm extractEntry test/vendor/qunit.js
+56 silly gunzTarPerm extractEntry test/vendor/underscore.js
+57 silly gunzTarPerm extractEntry test/vendor/qunit.css
+58 silly lockFile 57d2b2c2--usr-local-lib-node-modules-tree tar:///usr/local/lib/node_modules/tree
+59 silly lockFile 57d2b2c2--usr-local-lib-node-modules-tree tar:///usr/local/lib/node_modules/tree
+60 silly lockFile 64667320-adwaj-npm-tree-0-1-2-package-tgz tar:///home/bharadwaj/.npm/tree/0.1.2/package.tgz
+61 silly lockFile 64667320-adwaj-npm-tree-0-1-2-package-tgz tar:///home/bharadwaj/.npm/tree/0.1.2/package.tgz
+62 info preinstall tree@0.1.2
+63 verbose readDependencies using package.json deps
+64 verbose readDependencies using package.json deps
+65 verbose cache add [ 'underscore@', null ]
+66 verbose cache add name=undefined spec="underscore@" args=["underscore@",null]
+67 verbose parsed url { protocol: null,
+67 verbose parsed url   slashes: null,
+67 verbose parsed url   auth: null,
+67 verbose parsed url   host: null,
+67 verbose parsed url   port: null,
+67 verbose parsed url   hostname: null,
+67 verbose parsed url   hash: null,
+67 verbose parsed url   search: null,
+67 verbose parsed url   query: null,
+67 verbose parsed url   pathname: 'underscore@',
+67 verbose parsed url   path: 'underscore@',
+67 verbose parsed url   href: 'underscore@' }
+68 verbose cache add name="underscore" spec="" args=["underscore",""]
+69 verbose parsed url { protocol: null,
+69 verbose parsed url   slashes: null,
+69 verbose parsed url   auth: null,
+69 verbose parsed url   host: null,
+69 verbose parsed url   port: null,
+69 verbose parsed url   hostname: null,
+69 verbose parsed url   hash: null,
+69 verbose parsed url   search: null,
+69 verbose parsed url   query: null,
+69 verbose parsed url   pathname: null,
+69 verbose parsed url   path: null,
+69 verbose parsed url   href: '' }
+70 verbose addNamed [ 'underscore', '' ]
+71 verbose addNamed [ null, '*' ]
+72 silly lockFile 7629b758-underscore underscore@
+73 verbose lock underscore@ /home/bharadwaj/.npm/7629b758-underscore.lock
+74 silly addNameRange { name: 'underscore', range: '*', hasData: false }
+75 verbose url raw underscore
+76 verbose url resolving [ 'https://registry.npmjs.org/', './underscore' ]
+77 verbose url resolved https://registry.npmjs.org/underscore
+78 info trying registry request attempt 1 at 16:25:25
+79 verbose etag "71LQKKKGYLRR63UNB86N9ILLN"
+80 http GET https://registry.npmjs.org/underscore
+81 http 200 https://registry.npmjs.org/underscore
+82 silly registry.get cb [ 200,
+82 silly registry.get   { date: 'Mon, 29 Dec 2014 10:55:27 GMT',
+82 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+82 silly registry.get     etag: '"13QECXWDN25ER11QSUIVETWYN"',
+82 silly registry.get     'content-type': 'application/json',
+82 silly registry.get     'cache-control': 'max-age=60',
+82 silly registry.get     'content-length': '33547',
+82 silly registry.get     'accept-ranges': 'bytes',
+82 silly registry.get     via: '1.1 varnish',
+82 silly registry.get     age: '7',
+82 silly registry.get     'x-served-by': 'cache-sn86-SIN',
+82 silly registry.get     'x-cache': 'HIT',
+82 silly registry.get     'x-cache-hits': '1',
+82 silly registry.get     'x-timer': 'S1419850527.711062,VS0,VE0',
+82 silly registry.get     vary: 'Accept',
+82 silly registry.get     'keep-alive': 'timeout=10, max=50',
+82 silly registry.get     connection: 'Keep-Alive' } ]
+83 silly addNameRange number 2 { name: 'underscore', range: '*', hasData: true }
+84 silly addNameRange versions [ 'underscore',
+84 silly addNameRange   [ '1.0.3',
+84 silly addNameRange     '1.0.4',
+84 silly addNameRange     '1.1.0',
+84 silly addNameRange     '1.1.1',
+84 silly addNameRange     '1.1.2',
+84 silly addNameRange     '1.1.3',
+84 silly addNameRange     '1.1.4',
+84 silly addNameRange     '1.1.5',
+84 silly addNameRange     '1.1.6',
+84 silly addNameRange     '1.1.7',
+84 silly addNameRange     '1.2.0',
+84 silly addNameRange     '1.2.1',
+84 silly addNameRange     '1.2.2',
+84 silly addNameRange     '1.2.3',
+84 silly addNameRange     '1.2.4',
+84 silly addNameRange     '1.3.0',
+84 silly addNameRange     '1.3.1',
+84 silly addNameRange     '1.3.2',
+84 silly addNameRange     '1.3.3',
+84 silly addNameRange     '1.4.0',
+84 silly addNameRange     '1.4.1',
+84 silly addNameRange     '1.4.2',
+84 silly addNameRange     '1.4.3',
+84 silly addNameRange     '1.4.4',
+84 silly addNameRange     '1.5.0',
+84 silly addNameRange     '1.5.1',
+84 silly addNameRange     '1.5.2',
+84 silly addNameRange     '1.6.0',
+84 silly addNameRange     '1.7.0' ] ]
+85 verbose addNamed [ 'underscore', '1.7.0' ]
+86 verbose addNamed [ '1.7.0', '1.7.0' ]
+87 silly lockFile 900da168-underscore-1-7-0 underscore@1.7.0
+88 verbose lock underscore@1.7.0 /home/bharadwaj/.npm/900da168-underscore-1-7-0.lock
+89 silly lockFile 900da168-underscore-1-7-0 underscore@1.7.0
+90 silly lockFile 900da168-underscore-1-7-0 underscore@1.7.0
+91 silly lockFile 7629b758-underscore underscore@
+92 silly lockFile 7629b758-underscore underscore@
+93 silly resolved [ { name: 'underscore',
+93 silly resolved     description: 'JavaScript\'s functional programming helper library.',
+93 silly resolved     homepage: 'http://underscorejs.org',
+93 silly resolved     keywords: [ 'util', 'functional', 'server', 'client', 'browser' ],
+93 silly resolved     author: { name: 'Jeremy Ashkenas', email: 'jeremy@documentcloud.org' },
+93 silly resolved     repository:
+93 silly resolved      { type: 'git',
+93 silly resolved        url: 'git://github.com/jashkenas/underscore.git' },
+93 silly resolved     main: 'underscore.js',
+93 silly resolved     version: '1.7.0',
+93 silly resolved     devDependencies:
+93 silly resolved      { docco: '0.6.x',
+93 silly resolved        phantomjs: '1.9.7-1',
+93 silly resolved        'uglify-js': '2.4.x',
+93 silly resolved        eslint: '0.6.x' },
+93 silly resolved     scripts:
+93 silly resolved      { test: 'phantomjs test/vendor/runner.js test/index.html?noglobals=true && eslint underscore.js test/*.js test/vendor/runner.js',
+93 silly resolved        build: 'uglifyjs underscore.js -c "evaluate=false" --comments "/    .*/" -m --source-map underscore-min.map -o underscore-min.js',
+93 silly resolved        doc: 'docco underscore.js' },
+93 silly resolved     licenses: [ [Object] ],
+93 silly resolved     files: [ 'underscore.js', 'underscore-min.js', 'LICENSE' ],
+93 silly resolved     readme: '                       __\n                      /\\ \\                                                         __\n     __  __    ___    \\_\\ \\     __   _ __   ____    ___    ___   _ __    __       /\\_\\    ____\n    /\\ \\/\\ \\ /\' _ `\\  /\'_  \\  /\'__`\\/\\  __\\/ ,__\\  / ___\\ / __`\\/\\  __\\/\'__`\\     \\/\\ \\  /\',__\\\n    \\ \\ \\_\\ \\/\\ \\/\\ \\/\\ \\ \\ \\/\\  __/\\ \\ \\//\\__, `\\/\\ \\__//\\ \\ \\ \\ \\ \\//\\  __/  __  \\ \\ \\/\\__, `\\\n     \\ \\____/\\ \\_\\ \\_\\ \\___,_\\ \\____\\\\ \\_\\\\/\\____/\\ \\____\\ \\____/\\ \\_\\\\ \\____\\/\\_\\ _\\ \\ \\/\\____/\n      \\/___/  \\/_/\\/_/\\/__,_ /\\/____/ \\/_/ \\/___/  \\/____/\\/___/  \\/_/ \\/____/\\/_//\\ \\_\\ \\/___/\n                                                                                  \\ \\____/\n                                                                                   \\/___/\n\nUnderscore.js is a utility-belt library for JavaScript that provides\nsupport for the usual functional suspects (each, map, reduce, filter...)\nwithout extending any core JavaScript objects.\n\nFor Docs, License, Tests, and pre-packed downloads, see:\nhttp://underscorejs.org\n\nUnderscore is an open-sourced component of DocumentCloud:\nhttps://github.com/documentcloud\n\nMany thanks to our contributors:\nhttps://github.com/jashkenas/underscore/contributors\n',
+93 silly resolved     readmeFilename: 'README.md',
+93 silly resolved     bugs: { url: 'https://github.com/jashkenas/underscore/issues' },
+93 silly resolved     _id: 'underscore@1.7.0',
+93 silly resolved     _from: 'underscore@' } ]
+94 info install underscore@1.7.0 into /usr/local/lib/node_modules/tree
+95 info installOne underscore@1.7.0
+96 info /usr/local/lib/node_modules/tree/node_modules/underscore unbuild
+97 verbose tar unpack /home/bharadwaj/.npm/underscore/1.7.0/package.tgz
+98 silly lockFile b06814cc-les-tree-node-modules-underscore tar:///usr/local/lib/node_modules/tree/node_modules/underscore
+99 verbose lock tar:///usr/local/lib/node_modules/tree/node_modules/underscore /home/bharadwaj/.npm/b06814cc-les-tree-node-modules-underscore.lock
+100 silly lockFile 772ba013-npm-underscore-1-7-0-package-tgz tar:///home/bharadwaj/.npm/underscore/1.7.0/package.tgz
+101 verbose lock tar:///home/bharadwaj/.npm/underscore/1.7.0/package.tgz /home/bharadwaj/.npm/772ba013-npm-underscore-1-7-0-package-tgz.lock
+102 silly gunzTarPerm modes [ '755', '644' ]
+103 silly gunzTarPerm extractEntry package.json
+104 silly gunzTarPerm extractEntry README.md
+105 silly gunzTarPerm extractEntry LICENSE
+106 silly gunzTarPerm extractEntry underscore-min.js
+107 silly gunzTarPerm extractEntry underscore.js
+108 silly lockFile b06814cc-les-tree-node-modules-underscore tar:///usr/local/lib/node_modules/tree/node_modules/underscore
+109 silly lockFile b06814cc-les-tree-node-modules-underscore tar:///usr/local/lib/node_modules/tree/node_modules/underscore
+110 silly lockFile 772ba013-npm-underscore-1-7-0-package-tgz tar:///home/bharadwaj/.npm/underscore/1.7.0/package.tgz
+111 silly lockFile 772ba013-npm-underscore-1-7-0-package-tgz tar:///home/bharadwaj/.npm/underscore/1.7.0/package.tgz
+112 info preinstall underscore@1.7.0
+113 verbose readDependencies using package.json deps
+114 verbose readDependencies using package.json deps
+115 silly resolved []
+116 verbose about to build /usr/local/lib/node_modules/tree/node_modules/underscore
+117 info build /usr/local/lib/node_modules/tree/node_modules/underscore
+118 verbose linkStuff [ true,
+118 verbose linkStuff   '/usr/local/lib/node_modules',
+118 verbose linkStuff   false,
+118 verbose linkStuff   '/usr/local/lib/node_modules/tree/node_modules' ]
+119 info linkStuff underscore@1.7.0
+120 verbose linkBins underscore@1.7.0
+121 verbose linkMans underscore@1.7.0
+122 verbose rebuildBundles underscore@1.7.0
+123 info install underscore@1.7.0
+124 info postinstall underscore@1.7.0
+125 verbose about to build /usr/local/lib/node_modules/tree
+126 info build /usr/local/lib/node_modules/tree
+127 verbose linkStuff [ true,
+127 verbose linkStuff   '/usr/local/lib/node_modules',
+127 verbose linkStuff   true,
+127 verbose linkStuff   '/usr/local/lib/node_modules' ]
+128 info linkStuff tree@0.1.2
+129 verbose linkBins tree@0.1.2
+130 verbose linkMans tree@0.1.2
+131 verbose rebuildBundles tree@0.1.2
+132 verbose rebuildBundles [ 'underscore' ]
+133 info install tree@0.1.2
+134 info postinstall tree@0.1.2
+135 error peerinvalid The package yo does not satisfy its siblings' peerDependencies requirements!
+135 error peerinvalid Peer generator-angular-fullstack@2.0.13 wants yo@>=1.2.0
+135 error peerinvalid Peer generator-node-express@0.0.3 wants yo@>=1.0.0-rc.1
+136 error System Linux 3.13.0-43-generic
+137 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "tree"
+138 error cwd /home/bharadwaj/workspace/JockeyIndPoc
+139 error node -v v0.10.25
+140 error npm -v 1.3.10
+141 error code EPEERINVALID
+142 verbose exit [ 1, true ]

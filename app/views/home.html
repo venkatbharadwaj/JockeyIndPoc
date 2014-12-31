@@ -65,11 +65,10 @@
 
 </div>
 <!--<div class="col-sm-9" product-display products-data='productsData'>-->
-<div class="col-sm-9 noPaddingLR" ng-model="productsData" when-scrolled="addData()">
+<div class="col-sm-9 noPaddingLR" ng-model="productsData" infinite-scroll="loadProductsData()" >
     <!--<div infinite-scroll="loadMore()">-->
         <div ng-repeat="item in productsData" class="col-sm-4 prodDiv">
           <product item="item"></product>
         </div>
-  <button ng-click="addData();">Add Data!</button>
     <!--</div>-->
 </div>

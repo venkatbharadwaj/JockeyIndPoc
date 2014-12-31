@@ -1,14 +1,15 @@
 <div class="smProdImgDiv">
-  <img ng-repeat="stampImg in product.productimages" ng-src="{{stampImg.images[0]}}" alt="" class="smProdImg" ng-mouseover="largeImgHover(stampImg.images)" ng-mouseleave="largeImgMleave(product.tag[0])" />
-{{stampImg.images}}
+  <img ng-repeat="stampImg in product.productimages" ng-src="{{stampImg.images[0]}}" alt=""
+       class="smProdImg" ng-mouseover="largeImgHover(stampImg.images,stampImg)"
+       ng-mouseleave="largeImgMleave(product.tag[0],product)" />
 </div>
 <div class="col-sm-12 lgProdImgDiv">
-  <img ng-src="{{src}}" alt="" class="lgProdImg" ng-mouseover="largeImgHover(product.tag)" ng-mouseleave="largeImgMleave(product.tag[0])"/>
+  <img ng-src="{{src}}" alt="" class="lgProdImg" ng-mouseover="largeImgHover(product.tag)" ng-mouseleave="largeImgMleave(product.tag[0],product)"/>
   <div class="prodSmDesc">
-    <strong class="col-sm-12 prodTitle">{{product.stylename}}</strong>
-    <small class="col-sm-12">Collection : {{product.collectionname}}</small>
-    <strong class="col-sm-6">Rs. {{product.onlineprice}}</strong>
-    <small class="col-sm-6">Style # {{product.stylenumber}}</small>
+    <strong class="col-sm-12 prodTitle" >{{item.stylename}}</strong>
+    <small class="col-sm-12">Collection : {{item.collectionname}}</small>
+    <strong class="col-sm-6">Rs. {{item.onlineprice}}</strong>
+    <small class="col-sm-6">Style # {{item.stylenumber}}</small>
   </div>
 </div>
 

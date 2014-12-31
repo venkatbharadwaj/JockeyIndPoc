@@ -23,4 +23,4 @@ angular.module('jockeyIndPocApp')
             };
 
             return instance;
-        }])
+        }]);
