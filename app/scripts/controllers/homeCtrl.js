@@ -20,7 +20,7 @@ angular.module('jockeyIndPocApp')
                 url: "assets/productData.json"
             };
 
-            $scope.packs = [1,2,3];
+            $scope.packs = [1, 2, 3];
             $scope.collections = [
                 "24X7 Men",
                 "3D Innovations",
@@ -66,16 +66,33 @@ angular.module('jockeyIndPocApp')
 
             //$scope.loadProductsData();
 
+            $scope.filterBySizeArray = [];
+
+
             $scope.filterBySize = function (size, checkedVal) {
-                $log.log(size, checkedVal);
+                $scope.productsFilterData = [];
+                if (checkedVal === true && $scope.filterBySizeArray.indexOf(size) < 0) {
+                    $scope.filterBySizeArray.push(size);
+                }
+                if (checkedVal === false && $scope.filterBySizeArray.indexOf(size) >= 0) {
+                    var index = $scope.filterBySizeArray.indexOf(size);
+                    $scope.filterBySizeArray.splice(index, 1);
+                }
+
+                angular.forEach($scope.productsData, function (val, key) {
+                    angular.forEach(val, function (innerVal, innerKey) {
+                        $log.log("innerVal : ",innerVal);
+                    });
+                });
+
             };
 
             $scope.filterByPack = function (pack, checkedVal) {
-                $log.log(pack,checkedVal);
+                $log.log(pack, checkedVal);
             };
 
             $scope.filterByCollection = function (collection, checkedVal) {
-                $log.log(collection,checkedVal);
+                $log.log(collection, checkedVal);
             };
             $scope.loadMore = function() {
                 $scope.loadProductsData();

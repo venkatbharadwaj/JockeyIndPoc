@@ -1,4 +1,4 @@
-<div class="col-sm-3 noPaddingLR">
+<div class="col-xs-3 noPaddingLR">
     <h5 class="refineSearch">Refine Your Search</h5>
 
     <div class="filterSectionDiv">
@@ -8,11 +8,10 @@
         </div>
         <div class="filterSectionBody">
             <ul class="list-unstyled list-inline">
-                <li ng-repeat="size in sizes" class="col-sm-6">
+                <li ng-repeat="size in sizes" class="col-xs-6">
                     <label class="pointer">
                         <input type="checkbox" ng-model="checkVal" ng-click="filterBySize(size, checkVal)"/> {{size}}
                     </label>
-
                 </li>
             </ul>
         </div>
@@ -30,7 +29,6 @@
                         <input type="checkbox" ng-model="checkVal" ng-click="filterByPack(pack, checkVal)"/> pack of
                         {{pack}}
                     </label>
-
                 </li>
             </ul>
         </div>
